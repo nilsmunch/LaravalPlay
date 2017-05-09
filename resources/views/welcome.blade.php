@@ -1,78 +1,11 @@
-<!doctype html>
-<html lang="{{ config('app.locale') }}">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <title>Laravel</title>
-
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Raleway', sans-serif;
-                font-weight: 100;
-                height: 100vh;
-                margin: 0;
-            }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 12px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-
-            <div class="content">
-                <div class="title m-b-md">
-                    HELLO
-                </div>
-                <a href="/about">Read more about us</a>
-            </div>
-        </div>
-    </body>
-</html>
+@extends('layouts.default')
+@section('content')
+    i am the home page
+@stop
+@section('header')
+<section class="main-slider fullsize" data-stellar-background-ratio="0.5" style="background-image: url(/images/headers/developer.jpg)">
+	<div class="slider-caption">
+		<h1 data-animate="fadeInDown" data-delay="1000" data-duration="2s">Whenever you feel lost, <br>we are here to guide you!</h1>
+        <a data-animate="fadeInUp" data-duration="2s" data-delay="1300" href="javascript:;" class="btn btn-primary btn-lg">CONTACT US</a>	</div>
+</section>
+@stop

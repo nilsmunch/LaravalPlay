@@ -1,0 +1,1 @@
+Developed by <a href="http://lizardfactory.com" target="lizardfactory">LizardFactory</a> &middot; Hosted by <a href="https://m.do.co/c/a59e3115eda7" target="digitalocean">DigitalOcean</a>

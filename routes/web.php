@@ -11,10 +11,26 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+/* GAMER */
+if (in_array($_SERVER['SERVER_NAME'], ['players.playpylon.com'])) {
 
-Route::get('/about', function () {
-    return view('about');
-});
+Route::get('/', function () {return view('gamer/welcome');});
+Route::get('/about', function () {return view('gamer/about');});
+
+} else {
+
+Route::get('/', function () {return view('welcome');});
+Route::get('/about', function () {return view('about');});
+
+}
+
+
+/* NORMAL */
+
+Route::get('/publisher', function () {return view('welcome');});
+Route::get('/publishers', function () {return view('welcome');});
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
